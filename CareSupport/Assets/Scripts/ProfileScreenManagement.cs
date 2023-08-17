@@ -161,6 +161,7 @@ public class ProfileScreenManagement : MonoBehaviour
         auth.SignOut();
         SceneManager.LoadScene(0);
     }
+    
 }
 
         
