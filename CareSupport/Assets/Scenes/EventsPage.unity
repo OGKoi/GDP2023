@@ -216,7 +216,7 @@ GameObject:
   - component: {fileID: 459946775}
   - component: {fileID: 459946774}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Button 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -626,7 +626,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &706748524
 RectTransform:
   m_ObjectHideFlags: 0
@@ -830,7 +830,7 @@ GameObject:
   - component: {fileID: 714028441}
   - component: {fileID: 714028440}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Button 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1269,6 +1269,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd783be4fa010b842a8df1eb1bd610e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  preview1: {fileID: 459946774}
+  preview2: {fileID: 1022703315}
+  preview3: {fileID: 714028440}
   eventsignup1: {fileID: 1395476379}
   eventsignup2: {fileID: 713653449}
   eventsignup3: {fileID: 559825548}
@@ -1497,7 +1500,7 @@ GameObject:
   - component: {fileID: 1022703316}
   - component: {fileID: 1022703315}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Button 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1974,7 +1977,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1395476380
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2263,7 +2266,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1779359030
 RectTransform:
   m_ObjectHideFlags: 0

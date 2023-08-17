@@ -6,6 +6,9 @@ using UnityEngine.UI;
 public class EventSignupSystem : MonoBehaviour
 {
     public static bool[] signupCheck = new bool[3] {false, false, false};
+    public Button preview1;
+    public Button preview2;
+    public Button preview3;
     public GameObject eventsignup1;
     public GameObject eventsignup2;
     public GameObject eventsignup3;
@@ -16,12 +19,25 @@ public class EventSignupSystem : MonoBehaviour
 
     public void OnClickEvent()
     {
-        if (gameObject.activeSelf == false)
+        if (gameObject == preview1)
         {
-            gameObject.SetActive(true);
+            eventsignup1.SetActive(true);
             signupButton.gameObject.SetActive(true);
             cancelButton.gameObject.SetActive(true);
         }
+        else if (gameObject == preview2)
+        {
+            eventsignup2.SetActive(true);
+            signupButton.gameObject.SetActive(true);
+            cancelButton.gameObject.SetActive(true);
+        }
+        else if (gameObject == preview3)
+        {
+            eventsignup3.SetActive(true);
+            signupButton.gameObject.SetActive(true);
+            cancelButton.gameObject.SetActive(true);
+
+        }    
     }
 
     public void CancelEvent()
