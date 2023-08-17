@@ -17,27 +17,27 @@ public class EventSignupSystem : MonoBehaviour
 
 
 
-    public void OnClickEvent()
+    public void OnClickEvent1()
     {
-        if (gameObject == preview1)
-        {
+        
             eventsignup1.SetActive(true);
             signupButton.gameObject.SetActive(true);
             cancelButton.gameObject.SetActive(true);
-        }
-        else if (gameObject == preview2)
-        {
-            eventsignup2.SetActive(true);
-            signupButton.gameObject.SetActive(true);
-            cancelButton.gameObject.SetActive(true);
-        }
-        else if (gameObject == preview3)
-        {
-            eventsignup3.SetActive(true);
-            signupButton.gameObject.SetActive(true);
-            cancelButton.gameObject.SetActive(true);
+    }
 
-        }    
+    public void OnClickEvent2()
+    {
+
+        eventsignup2.SetActive(true);
+        signupButton.gameObject.SetActive(true);
+        cancelButton.gameObject.SetActive(true);
+    }
+    public void OnClickEvent3()
+    {
+
+        eventsignup3.SetActive(true);
+        signupButton.gameObject.SetActive(true);
+        cancelButton.gameObject.SetActive(true);
     }
 
     public void CancelEvent()

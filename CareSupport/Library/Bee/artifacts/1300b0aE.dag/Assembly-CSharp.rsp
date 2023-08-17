@@ -392,6 +392,7 @@
 "Assets/Scripts/HomepageSystem.cs"
 "Assets/Scripts/IconPanel.cs"
 "Assets/Scripts/LoginSystem.cs"
+"Assets/Scripts/PageSwipe.cs"
 "Assets/Scripts/ProfileScreenManagement.cs"
 -langversion:9.0
 
