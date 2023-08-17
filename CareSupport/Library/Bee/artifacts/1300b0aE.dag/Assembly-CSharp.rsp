@@ -388,6 +388,7 @@
 -r:"Library/Bee/artifacts/1300b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/EventSignupSystem.cs"
 "Assets/Scripts/GuidesSystem.cs"
+"Assets/Scripts/HomepageSystem.cs"
 "Assets/Scripts/IconPanel.cs"
 "Assets/Scripts/LoginSystem.cs"
 "Assets/Scripts/ProfileScreenManagement.cs"

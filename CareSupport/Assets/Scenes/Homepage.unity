@@ -610,6 +610,7 @@ GameObject:
   - component: {fileID: 779196942}
   - component: {fileID: 779196941}
   - component: {fileID: 779196944}
+  - component: {fileID: 779196945}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -678,10 +679,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f35157409e8906e48910a2144d56d749, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentActiveScene: {fileID: 0}
-  homepageScene: {fileID: 0}
-  guidespageScene: {fileID: 0}
-  eventspageScene: {fileID: 0}
+--- !u!114 &779196945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779196940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7bd52b69b4a20c4894c65c84e1de164, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event1: {fileID: 6475263304176055200, guid: eb9b83ee512da194dbbbde79779d539e, type: 3}
+  Event2: {fileID: 6475263304176055200, guid: eb9b83ee512da194dbbbde79779d539e, type: 3}
+  Event3: {fileID: 6475263304176055200, guid: eb9b83ee512da194dbbbde79779d539e, type: 3}
+  position1: {x: 0, y: 85, z: 0}
+  position2: {x: 0, y: 200, z: 0}
+  position3: {x: 0, y: 400, z: 0}
+  pos1open: 1
+  pos2open: 1
+  pos3open: 1
+  signupcheckDisplay: 000000
 --- !u!1 &796655539
 GameObject:
   m_ObjectHideFlags: 0
