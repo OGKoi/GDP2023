@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class IconPanel : MonoBehaviour
 {
+
     public void ToHome()
     {
         if (SceneManager.GetActiveScene().buildIndex != 1)

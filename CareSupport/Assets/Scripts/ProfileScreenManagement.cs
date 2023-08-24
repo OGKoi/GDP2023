@@ -12,13 +12,16 @@ public class ProfileScreenManagement : MonoBehaviour
     public DependencyStatus dependencyStatus;
     public FirebaseAuth auth;
     public FirebaseUser user;
-    public Text usernameDisplay;
-    public Text emailDisplay;
     public GameObject emailresetScreen;
     public InputField newEmailInput;
     public GameObject passwordresetScreen;
     public InputField newPasswordInput;
     public InputField newPasswordConfirmInput;
+
+    public Image emailresetpopup;
+    public Image pwresetpopup;
+
+    public Text passwordchangeError;
 
     void Awake()
     {
@@ -57,8 +60,6 @@ public class ProfileScreenManagement : MonoBehaviour
             if (signedIn)
             {
                 Debug.Log("Signed in " + user.DisplayName + " " + user.Email);
-                usernameDisplay.text = user.DisplayName.ToString();
-                emailDisplay.text = user.Email.ToString();
             }
         }
 
@@ -69,14 +70,6 @@ public class ProfileScreenManagement : MonoBehaviour
         auth.StateChanged -= AuthStateChanged;
         auth = null;
     }
-
-
-
-
-
-
-
-
 
     public void openEmailResetScreen()
     {
@@ -103,9 +96,12 @@ public class ProfileScreenManagement : MonoBehaviour
                     Debug.LogError("UpdateEmailAsync encountered an error: " + task.Exception);
                     return;
                 }
+                Debug.Log("Email changed successfully");
 
-                Debug.Log("User email updated successfully.");
             });
+            emailresetpopup.gameObject.SetActive(true);
+            emailresetScreen.SetActive(false);
+            Invoke("emailresetnotification", 0.5f);
         }
     }
     
@@ -122,12 +118,13 @@ public class ProfileScreenManagement : MonoBehaviour
     public void changePassword()
     {
         Firebase.Auth.FirebaseUser user = auth.CurrentUser;
-        if (newPasswordInput == newPasswordConfirmInput)
+        if (newPasswordInput.text == newPasswordConfirmInput.text)
         {
             string newPassword = newPasswordInput.text;
             if (user != null)
             {
-                user.UpdatePasswordAsync(newPassword).ContinueWith(task => {
+                user.UpdatePasswordAsync(newPassword).ContinueWith(task =>
+                {
                     if (task.IsCanceled)
                     {
                         Debug.LogError("UpdatePasswordAsync was canceled.");
@@ -142,19 +139,28 @@ public class ProfileScreenManagement : MonoBehaviour
                     Debug.Log("Password updated successfully.");
                 });
             }
+            pwresetpopup.gameObject.SetActive(true);
+            passwordresetScreen.SetActive(false);
+            Invoke("passwordresetnotification", 0.5f);
         }
-       
+        else
+        {
+            
+            passwordchangeError.text = "Passwords do not match";
+
+        }
     }
 
+    
+    void emailresetnotification()
+    {
+        emailresetpopup.gameObject.SetActive(false);
+    }
 
-
-
-
-
-
-
-
-
+    void passwordresetnotification()
+    {
+        pwresetpopup.gameObject.SetActive(false);
+    }
 
     public void SignOut()
     {

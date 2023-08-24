@@ -5,18 +5,27 @@ using UnityEngine.UI;
 
 public class EventSignupSystem : MonoBehaviour
 {
-    public static bool[] signupCheck = new bool[3] {false, false, false};
     public Button preview1;
     public Button preview2;
     public Button preview3;
+
     public GameObject eventsignup1;
     public GameObject eventsignup2;
     public GameObject eventsignup3;
+
     public Button signupButton;
     public Button cancelButton;
 
+    public SignUpCheck signupCheck;
 
+    public Image eventsignupPopup;
 
+    public void Start()
+    {
+        
+        signupCheck = FindObjectOfType<SignUpCheck>();
+
+    }
     public void OnClickEvent1()
     {
         
@@ -66,24 +75,35 @@ public class EventSignupSystem : MonoBehaviour
     {
         if (eventsignup1.activeSelf == true)
         {
-            signupCheck[0] = true;
+            signupCheck.Event1TrueFalse();
+            eventsignupPopup.gameObject.SetActive(true);
+            Invoke("eventsignupPopupCoroutine",0.5f);
             eventsignup1.SetActive(false);
             signupButton.gameObject.SetActive(false);
             cancelButton.gameObject.SetActive(false);
         }
         else if (eventsignup2.activeSelf == true)
         {
-            signupCheck[1] = true;
+            signupCheck.Event2TrueFalse();
+            eventsignupPopup.gameObject.SetActive(true);
+            Invoke("eventsignupPopupCoroutine", 0.5f);
             eventsignup2.SetActive(false);
             signupButton.gameObject.SetActive(false);
             cancelButton.gameObject.SetActive(false);
         }
         else if (eventsignup3.activeSelf == true)
         {
-            signupCheck[2] = true;
+            signupCheck.Event3TrueFalse();
+            eventsignupPopup.gameObject.SetActive(true);
+            Invoke("eventsignupPopupCoroutine", 0.5f);
             eventsignup3.SetActive(false);
             signupButton.gameObject.SetActive(false);
             cancelButton.gameObject.SetActive(false);
         }
+    }
+
+    public void eventsignupPopupCoroutine()
+    {
+        eventsignupPopup.gameObject.SetActive(false);
     }
 }

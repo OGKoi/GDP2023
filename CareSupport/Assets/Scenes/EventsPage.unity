@@ -150,7 +150,7 @@ RectTransform:
   m_GameObject: {fileID: 52428417}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 2.5, z: 1}
+  m_LocalScale: {x: 0.75253, y: 1.881325, z: 0.75253}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 796655540}
@@ -162,7 +162,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -1150}
+  m_AnchoredPosition: {x: 0, y: -1071}
   m_SizeDelta: {x: 1450, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &52428419
@@ -286,7 +286,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 779196945}
+      - m_Target: {fileID: 763780175}
         m_TargetAssemblyTypeName: EventSignupSystem, Assembly-CSharp
         m_MethodName: OnClickEvent1
         m_Mode: 1
@@ -445,7 +445,7 @@ Transform:
   m_GameObject: {fileID: 524583990}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.75253, y: 0.75253, z: 0.75253}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1395476380}
@@ -483,7 +483,7 @@ RectTransform:
   m_GameObject: {fileID: 559825548}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 524583991}
@@ -559,7 +559,7 @@ RectTransform:
   m_GameObject: {fileID: 567547766}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.75253, y: 0.75253, z: 0.75253}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 732768931}
@@ -567,7 +567,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -220, y: 1050}
+  m_AnchoredPosition: {x: -173, y: 922}
   m_SizeDelta: {x: 792, y: 222}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &567547768
@@ -636,7 +636,7 @@ RectTransform:
   m_GameObject: {fileID: 706748523}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 524583991}
@@ -691,7 +691,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 779196945}
+      - m_Target: {fileID: 763780175}
         m_TargetAssemblyTypeName: EventSignupSystem, Assembly-CSharp
         m_MethodName: CancelEvent
         m_Mode: 1
@@ -768,7 +768,7 @@ RectTransform:
   m_GameObject: {fileID: 713653449}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 524583991}
@@ -900,7 +900,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 779196945}
+      - m_Target: {fileID: 763780175}
         m_TargetAssemblyTypeName: EventSignupSystem, Assembly-CSharp
         m_MethodName: OnClickEvent3
         m_Mode: 1
@@ -1047,8 +1047,9 @@ RectTransform:
   - {fileID: 52428418}
   - {fileID: 1162403263}
   - {fileID: 524583991}
+  - {fileID: 1216674322}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1188,6 +1189,60 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 748258191}
   m_CullTransparentMesh: 1
+--- !u!1 &763780173
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 763780176}
+  - component: {fileID: 763780175}
+  m_Layer: 0
+  m_Name: SignUpSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &763780175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763780173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd783be4fa010b842a8df1eb1bd610e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  preview1: {fileID: 459946774}
+  preview2: {fileID: 1022703315}
+  preview3: {fileID: 714028440}
+  eventsignup1: {fileID: 1395476379}
+  eventsignup2: {fileID: 713653449}
+  eventsignup3: {fileID: 559825548}
+  signupButton: {fileID: 1779359031}
+  cancelButton: {fileID: 706748525}
+  signupCheck: {fileID: 0}
+  eventsignupPopup: {fileID: 1216674323}
+--- !u!4 &763780176
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763780173}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -55.40683, y: 495.47235, z: -2.117556}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &779196940
 GameObject:
   m_ObjectHideFlags: 0
@@ -1200,7 +1255,6 @@ GameObject:
   - component: {fileID: 779196942}
   - component: {fileID: 779196941}
   - component: {fileID: 779196944}
-  - component: {fileID: 779196945}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -1269,26 +1323,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f35157409e8906e48910a2144d56d749, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &779196945
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 779196940}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd783be4fa010b842a8df1eb1bd610e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  preview1: {fileID: 459946774}
-  preview2: {fileID: 1022703315}
-  preview3: {fileID: 714028440}
-  eventsignup1: {fileID: 1395476379}
-  eventsignup2: {fileID: 713653449}
-  eventsignup3: {fileID: 559825548}
-  signupButton: {fileID: 1779359031}
-  cancelButton: {fileID: 706748525}
 --- !u!1 &796655539
 GameObject:
   m_ObjectHideFlags: 0
@@ -1458,7 +1492,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -694.5001}
+  m_AnchoredPosition: {x: 0, y: -593.00006}
   m_SizeDelta: {x: 1200, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &860657973
@@ -1582,7 +1616,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 779196945}
+      - m_Target: {fileID: 763780175}
         m_TargetAssemblyTypeName: EventSignupSystem, Assembly-CSharp
         m_MethodName: OnClickEvent2
         m_Mode: 1
@@ -1659,7 +1693,7 @@ RectTransform:
   m_GameObject: {fileID: 1105390850}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.75253, y: 0.93697786, z: 0.75253}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 732768931}
@@ -1667,7 +1701,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 120}
+  m_AnchoredPosition: {x: 0, y: 93}
   m_SizeDelta: {x: 1440, y: 2310}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1105390852
@@ -1737,7 +1771,7 @@ RectTransform:
   m_GameObject: {fileID: 1162403262}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.87225753, y: 0.87225753, z: 0.87225753}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1508788404}
@@ -1746,8 +1780,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -92.5}
-  m_SizeDelta: {x: 0, y: -675}
+  m_AnchoredPosition: {x: 0.0015258789, y: -97.869385}
+  m_SizeDelta: {x: 158.17, y: -313.8673}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1162403264
 MonoBehaviour:
@@ -1830,6 +1864,82 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1162403262}
   m_CullTransparentMesh: 1
+--- !u!1 &1216674321
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1216674322}
+  - component: {fileID: 1216674324}
+  - component: {fileID: 1216674323}
+  m_Layer: 5
+  m_Name: Popup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1216674322
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216674321}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3.5, y: 3.5, z: 3.5}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 732768931}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 249, y: 98}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1216674323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216674321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: c4df76e055a77914898b6b8bd745cd85, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1216674324
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216674321}
+  m_CullTransparentMesh: 1
 --- !u!1 &1218085908
 GameObject:
   m_ObjectHideFlags: 0
@@ -1866,7 +1976,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 15.499939}
+  m_AnchoredPosition: {x: 0, y: 117}
   m_SizeDelta: {x: 1200, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1218085910
@@ -1943,7 +2053,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 725.5}
+  m_AnchoredPosition: {x: 0, y: 827.00006}
   m_SizeDelta: {x: 1200, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1287175245
@@ -2011,7 +2121,7 @@ RectTransform:
   m_GameObject: {fileID: 1395476379}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 524583991}
@@ -2098,8 +2208,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -207.5}
-  m_SizeDelta: {x: 1440, y: 2300}
+  m_AnchoredPosition: {x: 0.013829, y: -205.6429}
+  m_SizeDelta: {x: 1238.2, y: 2437.4182}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1508788405
 MonoBehaviour:
@@ -2300,7 +2410,7 @@ RectTransform:
   m_GameObject: {fileID: 1779359029}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 524583991}
@@ -2355,7 +2465,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 779196945}
+      - m_Target: {fileID: 763780175}
         m_TargetAssemblyTypeName: EventSignupSystem, Assembly-CSharp
         m_MethodName: OnClickSignUp
         m_Mode: 1

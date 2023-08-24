@@ -18,7 +18,7 @@ public class LoginSystem : MonoBehaviour
     [Header("Login")]
     public InputField emailLoginField;
     public InputField passwordLoginField;
-    public Text warningLoginText;
+    public Text loginErrorText;
 
     //Register variables
     [Header("Register")]
@@ -30,6 +30,9 @@ public class LoginSystem : MonoBehaviour
     [Header("Panel")]
     public GameObject loginPanel;
     public GameObject registerPanel;
+
+    [Header("Popup")]
+    public Image signupPopup;
 
     void Awake()
     {
@@ -84,6 +87,7 @@ public class LoginSystem : MonoBehaviour
             AuthError errorCode = (AuthError)firebaseEx.ErrorCode;
 
             string message = "Login Failed!";
+            loginErrorText.text = message;
 
             switch (errorCode)
             {
@@ -103,7 +107,6 @@ public class LoginSystem : MonoBehaviour
                     message = "Account does not exist";
                     break;
             }
-            warningLoginText.text = message;
         }
         else
         {
@@ -111,7 +114,6 @@ public class LoginSystem : MonoBehaviour
             //Now get the result
             user = new FirebaseUser(LoginTask.Result.User);
             Debug.LogFormat("User signed in successfully: {0} ({1})", user.DisplayName, user.Email);
-            warningLoginText.text = "";
             SceneManager.LoadScene(1);
         }
     }
@@ -126,7 +128,7 @@ public class LoginSystem : MonoBehaviour
         else
         {
             //Call the Firebase auth signin function passing the email and password
-            Task<AuthResult> RegisterTask = auth.CreateUserWithEmailAndPasswordAsync(_email,  _password);
+            Task<AuthResult> RegisterTask = auth.CreateUserWithEmailAndPasswordAsync(_email, _password);
             //Wait until the task completes
             yield return new WaitUntil(predicate: () => RegisterTask.IsCompleted);
 
@@ -183,6 +185,7 @@ public class LoginSystem : MonoBehaviour
                     {
                         //Username is now set
                         //Now return to login screen
+                        StartCoroutine(signupNotification());
                         loginPanel.SetActive(true);
                         registerPanel.SetActive(false);
                         warningRegisterText.text = "";
@@ -192,9 +195,23 @@ public class LoginSystem : MonoBehaviour
         }
     }
 
+    IEnumerator signupNotification()
+    {
+        signupPopup.gameObject.SetActive(true);
+        yield return new WaitForSeconds(1);
+        signupPopup.gameObject.SetActive(false);
+        yield return null;
+    }
+
     public void OnClickRegisterPrompt()
     {
         loginPanel.SetActive(false);
         registerPanel.SetActive(true);
+    }
+
+    public void CancelRegisterButton()
+    {
+        loginPanel.SetActive(true);
+        registerPanel.SetActive(false);
     }
 }
